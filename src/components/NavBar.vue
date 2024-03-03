@@ -1,5 +1,4 @@
 <template>
-  <BurgerSection :closeMenu="closeMenu"/>
   <div class="nav-background">
     <nav class="section nav">
       <a class="nav-logo logo-link">
@@ -38,19 +37,17 @@
 </template>
 
 <script>
-import BurgerSection from "./BurgerSection.vue";
-
 export default {
   name: 'NavBar',
-  components: {BurgerSection},
-  isVisible: false,
+
   methods: {
     showMenu() {
+      console.log('show')
       this.isVisible = true;
     },
     closeMenu(event) {
       this.isVisible = event;
-      console.log(this.isVisible);
+      console.log('close');
     }
   }
 }

@@ -18,7 +18,7 @@ export default {
       <li>sdf</li>
       <li>sdf</li>
     </ul>
-    <button @click="this.$emit('closeMenu', false)">skfnsjd</button>
+    <button>skfnsjd</button>
   </div>
 </template>
 
